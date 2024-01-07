@@ -78,6 +78,7 @@ const projectConfig = {
   jwtSecret: process.env.JWT_SECRET,
   cookieSecret: process.env.COOKIE_SECRET,
   store_cors: STORE_CORS,
+  redis_url: process.env.REDIS_URL,
   database_url: DATABASE_URL,
   database_type: "postgres",
   admin_cors: ADMIN_CORS,
@@ -98,7 +99,7 @@ const projectConfig = {
   redis_options: {
     connectionName: "medusa",
   },
-  
+
   // Uncomment the following lines to enable REDIS
   // redis_url: REDIS_URL
 };
