@@ -94,7 +94,7 @@ const projectConfig = {
       : {},
 
   database_logging: [
-    "query", "error",
+    "error",
   ],
   redis_options: {
     connectionName: "medusa",
