@@ -42,6 +42,7 @@ const plugins = [
     resolve: `@medusajs/file-local`,
     options: {
       upload_dir: "uploads",
+backend_url: "https://eshopbackend.dev-links.dev"
     },
   },
   {
@@ -52,6 +53,7 @@ const plugins = [
       develop: {
         open: process.env.OPEN_BROWSER !== "false",
       },
+	serve: true
     },
   },
 
@@ -109,4 +111,7 @@ module.exports = {
   projectConfig,
   plugins,
   modules,
+  featureFlags: {
+    product_categories: true,
+  },
 };
